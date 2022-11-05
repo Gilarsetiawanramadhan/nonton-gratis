@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"/>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous">
+    </script>
+    <!--batas bootstrap-->
+    <!--icon bootstrap-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <!--batas icon bootstrap-->
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color: rgb(95, 98, 100);
+        }
+        .container-fluid{
+            background-color: lightgrey;
+            border-bottom: 10px solid black;
+        }
+        .d-flex {       width: 50vw;
+        }
+
+        @media screen and (max-width: 992px) {
+            .d-flex {
+                width: 90vw;
+        }
+        }
+
+        .form-control{
+        border: none;
+        border-bottom-right-radius: 24px;
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        }
+
+        .search-btn {
+        background-color: #fff;
+        border: none;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+        position: relative;
+        right: 50px;
+        }
+        .btn{
+            position: relative;
+            bottom: 15px;
+            font-size: large;
+            font-weight: 800;
+            border: none;
+            width: 250px;
+        }
+        .main{
+            background-color: rgb(95, 104, 114);
+            height: auto;
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+            border-bottom: 10px solid white;
+        }
+        .ratting{
+            background-color: darkcyan;
+            margin-top: 20px;
+            border: 2px solid yellowgreen;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-family: 'Luckiest Guy', cursive; font-size: 40px; color:rgb(110, 15, 19);">
+                Nakama
+            </a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <span class="input-group-text search-btn" id="basic-addon2">
+                    <i class="bi bi-search-heart"></i>
+                </span>
+            </form>
+            </div>
+        </div>
+    </nav>
+    <ul class="nav justify-content-center sticky-top" 
+        style="background-color: currentColor; margin-bottom: 20px; border-bottom: 4px solid whitesmoke;">
+        <li 
+            class="nav-item">
+            <a 
+                class="nav-link active"
+                style="color: white; font-weight: 600;"
+                aria-current="page" 
+                href="#">
+                Daftar Anime
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"
+            style="color: white; font-weight: 600;"
+            href="#">
+            Rekomendasi
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" 
+            style="color: white; font-weight: 600;"
+            href="#">Tipe Karakter</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Jadwal</a>
+        </li>
+    </ul>
+    <!--batas navbar-->
+    <nav aria-label="breadcrumb" style="padding-left: 10px;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color: aliceblue;">Anime</a></li>
+            <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color: aliceblue;">One-piece sub indo</a></li>
+            <li class="breadcrumb-item active" aria-current="page" style="color: aliceblue;">episod-1</li>
+        </ol>
+    </nav>
+    <!--batas Breadcrumb-->
+    <div class="main container-sm">
+        <div class="content"
+        style="display: flex; justify-content:space-around;">
+            <iframe width="960" height="315" src="https://www.youtube.com/embed/dCLCmU_sVoo" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination" 
+                style="display: flex; justify-content: end; padding:10px">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+        <div class="container text-center-sm">
+            <div class="row" style="text-transform: capitalize;">
+                <div class="col">
+                    <img src="carosel_jpg/One-piece.jpg"
+                    class="img-thumbnail"
+                    style="margin: 20px; width: 30vw; border: 2px solid lightgray;"
+                    alt="...">
+                </div>
+                <div class="col-md" 
+                    style=" margin-top: 20px; color: darkgrey;">
+                    <h3 style="padding-left: 20px;">One piece sub indo</h3>
+                    <div class="list-group list-group-horizontal-md">
+                        <ul style="list-style-type:disc;">
+                            <li>Genre:fantasi,komedi,petualangan,super power.</li>
+                            <li>rilis : agustus 25,2012</li>
+                            <li>durasi : 23 menit</li>
+                            <li>studio : toei animation</li>
+                            <li>diipdate : januari 23,2022</li>
+                        </ul>
+                        <ul style="list-style-type:disc;">
+                            <li>status : selesai</li>
+                            <li>jenis : special</li>
+                            <li>pengarang: eiichiro oda</li>
+                            <li>diposting:NAKAMA</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ratting">
+                        <h4>rating 8,17</h4>
+                        <i class="bi bi-star-fill" style="color: gold;"></i>
+                        <i class="bi bi-star-fill" style="color: gold;"></i>
+                        <i class="bi bi-star-fill" style="color: gold;"></i>
+                        <i class="bi bi-star-fill" style="color: gold;"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="background-color: currentColor; border: 2px solid saddlebrown;">
+                <p style="color: darkgray; text-align: justify; padding: 10px;">
+                    Gol D. Roger dikenal sebagai “Raja Bajak Laut,” makhluk terkuat dan paling terkenal yang pernah berlayar di Grand Line. 
+                    Penangkapan dan eksekusi Roger oleh Pemerintah Dunia membawa perubahan di seluruh dunia. Kata-kata terakhirnya sebelum 
+                    kematiannya mengungkapkan keberadaan harta terbesar di dunia, One Piece. Pengungkapan inilah yang menghasilkan Grand Age 
+                    of Pirates, orang-orang yang bermimpi menemukan One Piece — yang menjanjikan kekayaan dan ketenaran dalam jumlah tak terbatas 
+                    dan sangat mungkin puncak kemuliaan serta gelar Raja Bajak Laut.Enter Monkey D. Luffy, bocah berusia 17 tahun yang menentang 
+                    definisi standar Anda tentang bajak laut. Alih-alih persona populer dari desa bajak laut yang jahat, keras, dan tak bergigi 
+                    untuk bersenang-senang, alasan Luffy untuk menjadi bajak laut adalah salah satu keajaiban: pikiran tentang petualangan yang 
+                    mengasyikkan yang membawanya ke orang-orang yang membangkitkan minat dan akhirnya, harta yang dijanjikan. Mengikuti jejak 
+                    pahlawan masa kecilnya, Luffy dan krunya melakukan perjalanan melintasi Grand Line, mengalami petualangan gila, mengungkap 
+                    misteri gelap dan melawan musuh yang kuat, semua untuk mencapai kekayaan yang paling didambakan dari semua kekayaan — One Piece. 
+                    [Ditulis oleh Animasu Menulis kembali]
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>
